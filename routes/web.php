@@ -16,7 +16,12 @@ Route::get('/', function () {
     return view('index');
 });
 
-Auth::routes();
+// Auth::routes();
+Route::post('/api/login','UserController@login');
+
+//Usuarios
+Route::post('/api/usuario/registrar','UserController@register');
+
 
 // Route::get('/', 'LoginController@index')->name('home');
-Route::get('/api/login','LoginController@index');
+// Route::get('/api/login','LoginController@index');

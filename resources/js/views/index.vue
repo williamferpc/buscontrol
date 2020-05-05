@@ -3,8 +3,8 @@
 		<div class="card">
 			<div class="card-body">
 				<form>
-					<div class="d-flex justify-content-center mt-3 login_container">
-						<img src="images/buscontrol.png" class="img-logo" alt="Logo">
+					<div class="d-flex justify-content-center mt-3 login_container" >
+						<img src="images/buscontrol.png" style="width: 10rem;" alt="Logo">
 					</div><br>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
@@ -28,14 +28,14 @@
 	</div>
 </template>
 
-<!-- <script>
+<script>
 	export default {
 		mounted(){
-			axios.get('/api/login')
+			axios.post('/login',{})
 			.then(res => {
 				console.log(res);
 			})
 			.catch(err => console.log(err));
 		}
 	}
-</script> -->
+</script>

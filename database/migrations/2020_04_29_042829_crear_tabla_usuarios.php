@@ -16,7 +16,7 @@ class CrearTablaUsuarios extends Migration
         Schema::create('usuarios', function (Blueprint $table) {
             $table->id('idUsuario');
             $table->unsignedBigInteger('idRol');
-            $table->string('nombreUsuario','80');
+            $table->string('usuarioSistema','80');
             $table->string('contrasena');
             $table->string('correoelectronico');
             $table->timestamp('fechaInactivacion', 0)->nullable();
